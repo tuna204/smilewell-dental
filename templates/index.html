@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Primary Meta Tags -->
-<title>SmileWell Dental Clinic | Trusted Dentist in Ado, Nasarawa</title>
-<meta name="description" content="SmileWell Dental Clinic offers professional and affordable dental care in Ado, Nasarawa State. Visit us at Osinachi Plaza or book an appointment today.">
-<meta name="keywords" content="SmileWell Dental Clinic, dentist in Ado, dental clinic in Nasarawa, dentist near New Karu Junction, dental care Ado">
+<title>SmileWell Dental Clinic | Dentist & Dental Clinic Near You in Ado, Nasarawa</title>
+<meta name="description" content="Looking for a dentist or dental clinic near you in Ado, Nasarawa? SmileWell Dental Clinic offers teeth calculus removal, tooth extraction, whitening & more. Open Mon–Sun, 8AM–6PM. Book today.">
+<meta name="keywords" content="dentist near me, dental clinic near me, ado dental clinic, teeth calculus removal, dentist around me, SmileWell Dental Clinic, dental clinic near me open now, dentist in Ado Nasarawa">
 <meta name="author" content="SmileWell Dental Clinic">
 <meta name="robots" content="index, follow">
 
@@ -17,16 +17,16 @@
 <meta name="ICBM" content="9.0015, 7.6210">
 
 <!-- Open Graph (WhatsApp / Facebook Preview) -->
-<meta property="og:title" content="SmileWell Dental Clinic | Trusted Dentist in Ado, Nasarawa">
-<meta property="og:description" content="Professional and affordable dental services in Ado, Nasarawa State. Book your dental appointment today.">
+<meta property="og:title" content="SmileWell Dental Clinic | Dentist Near You in Ado, Nasarawa">
+<meta property="og:description" content="Your trusted dental clinic near you in Ado, Nasarawa. Teeth calculus removal, extractions, whitening & more. Open 7 days. Book your appointment today.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://smilewelldentalclinic.com">
 <meta property="og:site_name" content="SmileWell Dental Clinic">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SmileWell Dental Clinic | Trusted Dentist in Ado">
-<meta name="twitter:description" content="Affordable and professional dental care in Ado, Nasarawa State. Visit or book an appointment today.">
+<meta name="twitter:title" content="SmileWell Dental Clinic | Dentist Near You in Ado">
+<meta name="twitter:description" content="Your trusted dental clinic near you in Ado, Nasarawa. Open Mon–Sun, 8AM–6PM. Book an appointment today.">
 <link rel="icon" href="{{ url_for('static', filename='favoo.png') }}" type="image/png">
     <style>
 * {
@@ -296,25 +296,13 @@ header.scrolled .logo-circle {
 }
 
 @keyframes slideInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-buttons {
@@ -394,12 +382,26 @@ header.scrolled .logo-circle {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.slider-arrow.prev {
-  left: 20px;
+.slider-arrow.prev { left: 20px; }
+.slider-arrow.next { right: 20px; }
+
+/* OPENING HOURS BANNER */
+.hours-banner {
+  background: #0077ff;
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
-.slider-arrow.next {
-  right: 20px;
+.hours-banner span {
+  margin: 0 15px;
+}
+
+.hours-banner .hours-dot {
+  color: #a8d4ff;
 }
 
 /* TRANSFORMATIONS */
@@ -678,20 +680,14 @@ header.scrolled .logo-circle {
   transform: scale(1.05);
 }
 
-/* Pause on hover */
 .gallery-wrapper:hover .gallery-track {
   animation-play-state: paused;
 }
 
 @keyframes scrollGallery {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
-
 
 .whatsapp-btn {
   display: inline-block;
@@ -710,8 +706,6 @@ header.scrolled .logo-circle {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
 }
-
-
 
 /* VISION */
 .vision {
@@ -991,18 +985,76 @@ header.scrolled .logo-circle {
   line-height: 1.8;
 }
 
-/* First paragraph = soft, story-like */
 .about-clinic p:first-of-type {
   font-style: italic;
   color: #5f738a;
 }
 
-/* Second paragraph = confident, strong */
 .about-clinic p:last-of-type {
   font-weight: 600;
   color: #0f2b46;
 }
 
+/* FIND US SECTION */
+.find-us {
+  background: linear-gradient(135deg, #f0f6ff 0%, #e8f0fe 100%);
+  padding: 70px 5%;
+  text-align: center;
+}
+
+.find-us h2 {
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 700;
+  color: #0f2b46;
+  margin-bottom: 18px;
+}
+
+.find-us p {
+  font-size: 17px;
+  color: #444;
+  max-width: 750px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+}
+
+.find-us-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.find-us-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.find-us-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 119, 255, 0.12);
+}
+
+.find-us-card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.find-us-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0077ff;
+  margin-bottom: 6px;
+}
+
+.find-us-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
 
 .call-btn {
   display: inline-block;
@@ -1023,11 +1075,11 @@ header.scrolled .logo-circle {
 }
 
 .map-container {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
 }
 
 /* FOOTER */
@@ -1041,9 +1093,7 @@ header.scrolled .logo-circle {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .mobile-toggle {
-    display: flex;
-  }
+  .mobile-toggle { display: flex; }
 
   .nav {
     position: fixed;
@@ -1060,36 +1110,20 @@ header.scrolled .logo-circle {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   }
 
-  .nav.active {
-    left: 0;
-  }
+  .nav.active { left: 0; }
 
-  .appointment-container {
-    grid-template-columns: 1fr;
-  }
+  .appointment-container { grid-template-columns: 1fr; }
+  .consult-services { grid-template-columns: 1fr; }
+  .transform-grid, .equipment-grid { grid-template-columns: 1fr; }
 
-  .consult-services {
-    grid-template-columns: 1fr;
-  }
+  .slider-arrow { width: 40px; height: 40px; font-size: 18px; }
+  .slider-arrow.prev { left: 10px; }
+  .slider-arrow.next { right: 10px; }
 
-  .transform-grid,
-  .equipment-grid {
-    grid-template-columns: 1fr;
-  }
+  .hours-banner span { display: block; margin: 4px 0; }
 
-  .slider-arrow {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  .slider-arrow.prev {
-    left: 10px;
-  }
-
-  .slider-arrow.next {
-    right: 10px;
-  }
+  .gallery-track img { width: 220px; height: 160px; }
+  .gallery-track { gap: 14px; }
 }
 
 /* Loading animation */
@@ -1102,19 +1136,6 @@ header.scrolled .logo-circle {
   border-top-color: #fff;
   animation: spin 1s ease-in-out infinite;
 }
-
-
-@media (max-width: 768px) {
-  .gallery-track img {
-    width: 220px;
-    height: 160px;
-  }
-
-  .gallery-track {
-    gap: 14px;
-  }
-}
-
 
 @keyframes spin {
   to { transform: rotate(360deg); }
@@ -1149,7 +1170,6 @@ header.scrolled .logo-circle {
 
     <!-- HERO SLIDER -->
     <div class="hero-slider" id="home">
-        <!-- Slide 1 -->
         <div class="hero-slide active" style="background-image: url('/static/tr33.jpg');">
             <div class="hero-content container">
                 <h2>Your Smile Starts with SmileWell</h2>
@@ -1160,7 +1180,6 @@ header.scrolled .logo-circle {
             </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="hero-slide" style="background-image: url('/static/exam.jpg');">
             <div class="hero-content container">
                 <h2>State-of-the-Art Equipment</h2>
@@ -1171,27 +1190,33 @@ header.scrolled .logo-circle {
             </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="hero-slide" style="background-image: url('/static/t2.jpg');">
             <div class="hero-content container">
                 <h2>Quality Affordable Care</h2>
-                <p>Serving individuals and families in Abuja</p>
+                <p>Serving individuals and families in Ado, Nasarawa & surrounding areas</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn">Get Started</a>
                 </div>
             </div>
         </div>
 
-        <!-- Navigation Arrows -->
-        <button class="slider-arrow prev">‹</button>
-        <button class="slider-arrow next">›</button>
+        <button class="slider-arrow prev">&#8249;</button>
+        <button class="slider-arrow next">&#8250;</button>
 
-        <!-- Navigation Dots -->
         <div class="slider-dots">
             <span class="dot active" data-slide="0"></span>
             <span class="dot" data-slide="1"></span>
             <span class="dot" data-slide="2"></span>
         </div>
+    </div>
+
+    <!-- OPENING HOURS BANNER -->
+    <div class="hours-banner">
+        <span>🕗 <strong>Open 7 Days a Week</strong></span>
+        <span class="hours-dot">●</span>
+        <span>Monday – Sunday &nbsp;|&nbsp; 8:00 AM – 6:00 PM</span>
+        <span class="hours-dot">●</span>
+        <span>📍 Ado, Nasarawa State</span>
     </div>
 
     <section class="transformations fade-in">
@@ -1201,24 +1226,23 @@ header.scrolled .logo-circle {
         <div class="transform-grid">
             <div class="transform-card">
                 <div class="compare-container" data-compare>
-                    <img src="/static/after.jpg" alt="Before treatment">
-                    <img src="/static/befor.jpg" alt="After treatment" class="after-img">
+                    <img src="/static/after.jpg" alt="Before teeth whitening">
+                    <img src="/static/befor.jpg" alt="After teeth whitening" class="after-img">
                     <div class="slider-line"></div>
-                    <div class="slider-handle">⇄</div>
+                    <div class="slider-handle">&#8644;</div>
                 </div>
                 <div class="transform-text">
-
-			<h4>Teeth Whitening</h4>
+                    <h4>Teeth Whitening</h4>
                     <p>Professional whitening to remove stains and restore a brighter smile.</p>
                 </div>
             </div>
 
             <div class="transform-card">
                 <div class="compare-container" data-compare>
-                    <img src="/static/after1.jpg" alt="Before treatment">
-                    <img src="/static/befor1.jpg" alt="After treatment" class="after-img">
+                    <img src="/static/after1.jpg" alt="Before composite filling">
+                    <img src="/static/befor1.jpg" alt="After composite filling" class="after-img">
                     <div class="slider-line"></div>
-                    <div class="slider-handle">⇄</div>
+                    <div class="slider-handle">&#8644;</div>
                 </div>
                 <div class="transform-text">
                     <h4>Composite Filling</h4>
@@ -1228,10 +1252,10 @@ header.scrolled .logo-circle {
 
             <div class="transform-card">
                 <div class="compare-container" data-compare>
-                    <img src="/static/after2.jpg" alt="Before treatment">
-                    <img src="/static/befor2.jpg" alt="After treatment" class="after-img">
+                    <img src="/static/after2.jpg" alt="Before teeth bracing">
+                    <img src="/static/befor2.jpg" alt="After teeth bracing" class="after-img">
                     <div class="slider-line"></div>
-                    <div class="slider-handle">⇄</div>
+                    <div class="slider-handle">&#8644;</div>
                 </div>
                 <div class="transform-text">
                     <h4>Teeth Bracing</h4>
@@ -1248,7 +1272,7 @@ header.scrolled .logo-circle {
 
             <div class="equipment-grid">
                 <div class="equipment-card">
-                    <img src="/static/exam.jpg" alt="Dental examination">
+                    <img src="/static/exam.jpg" alt="Dental examination at SmileWell Ado">
                     <div class="transform-text">
                         <h4>Professional Dental Examination</h4>
                         <p>Modern diagnostic tools for accurate oral assessment.</p>
@@ -1264,7 +1288,7 @@ header.scrolled .logo-circle {
                 </div>
 
                 <div class="equipment-card">
-                    <img src="/static/images (3).jpeg" alt="Dental chair">
+                    <img src="/static/images (3).jpeg" alt="Dental chair SmileWell clinic">
                     <div class="transform-text">
                         <h4>Comfortable Treatment Setup</h4>
                         <p>Designed for patient comfort and precision care.</p>
@@ -1280,7 +1304,7 @@ header.scrolled .logo-circle {
             <div class="services-grid">
                 <div class="service">
                     <h3>General Dental Care</h3>
-                    <p>Scaling & polishing, dental fillings, extractions, crowns, onlays & bridges, general check-ups.</p>
+                    <p>Teeth calculus removal, scaling & polishing, dental fillings, tooth removal & extractions, crowns, onlays & bridges, general check-ups.</p>
                 </div>
 
                 <div class="service">
@@ -1297,31 +1321,28 @@ header.scrolled .logo-circle {
     </section>
 
     <section class="clinic-gallery">
-  <h2>Inside Our Dental Clinic</h2>
-
-  <div class="gallery-wrapper">
-    <div class="gallery-track">
-      <img src="/static/smal1.jpg" alt="Dental clinic">
-      <img src="/static/smal3.jpg" alt="Dental procedure">
-      <img src="/static/smal4.jpg" alt="Dental equipment">
-      <img src="/static/smal5.jpg" alt="Patient care">
-      <img src="/static/small.jpg" alt="Dental chair">
-      <img src="/static/t2.jpg" alt="Clinic interior">
-      <img src="/static/smal5.jpg" alt="Dental treatment">
-      <img src="/static/imag5.jpg" alt="Smiling patient">
-      <img src="/static/imag6.jpg" alt="Dental tools">
-      <img src="/static/imag4.jpg" alt="Clinic environment">
-
-      <!-- duplicate for smooth loop -->
-      <img src="/static/smal1.jpg">
-      <img src="/static/smal3.jpg">
-      <img src="/static/smal4.jpg">
-      <img src="/static/smal5.jpg">
-      <img src="/static/small.jpg">
-    </div>
-  </div>
-</section>
-
+        <h2>Inside Our Dental Clinic</h2>
+        <div class="gallery-wrapper">
+            <div class="gallery-track">
+                <img src="/static/smal1.jpg" alt="SmileWell dental clinic Ado">
+                <img src="/static/smal3.jpg" alt="Dental procedure">
+                <img src="/static/smal4.jpg" alt="Dental equipment">
+                <img src="/static/smal5.jpg" alt="Patient care">
+                <img src="/static/small.jpg" alt="Dental chair">
+                <img src="/static/t2.jpg" alt="Clinic interior">
+                <img src="/static/smal5.jpg" alt="Dental treatment">
+                <img src="/static/imag5.jpg" alt="Smiling patient">
+                <img src="/static/imag6.jpg" alt="Dental tools">
+                <img src="/static/imag4.jpg" alt="Clinic environment">
+                <!-- duplicate for smooth loop -->
+                <img src="/static/smal1.jpg" alt="SmileWell dental clinic">
+                <img src="/static/smal3.jpg" alt="Dental procedure">
+                <img src="/static/smal4.jpg" alt="Dental equipment">
+                <img src="/static/smal5.jpg" alt="Patient care">
+                <img src="/static/small.jpg" alt="Dental chair">
+            </div>
+        </div>
+    </section>
 
     <section class="vision fade-in">
         <div class="container">
@@ -1355,6 +1376,35 @@ header.scrolled .logo-circle {
         </div>
     </section>
 
+    <!-- FIND US NEAR YOU SECTION -->
+    <section class="find-us fade-in" id="find-us">
+        <h2>Looking for a Dentist Near You?</h2>
+        <p>Patients searching for a dentist or dental clinic near them in Ado, Karu, New Karu Junction, and across Nasarawa State trust SmileWell for professional, compassionate dental care. We are open 7 days a week — walk-ins welcome.</p>
+
+        <div class="find-us-grid">
+            <div class="find-us-card">
+                <div class="icon">📍</div>
+                <h4>Easy to Find</h4>
+                <p>Suite 205, Osinachi Plaza, Opp. New Karu Junction, Ado, Nasarawa</p>
+            </div>
+            <div class="find-us-card">
+                <div class="icon">🕗</div>
+                <h4>Open Every Day</h4>
+                <p>Monday – Sunday<br>8:00 AM – 6:00 PM</p>
+            </div>
+            <div class="find-us-card">
+                <div class="icon">🦷</div>
+                <h4>Walk-ins Welcome</h4>
+                <p>No appointment needed for general check-ups and consultations</p>
+            </div>
+            <div class="find-us-card">
+                <div class="icon">📞</div>
+                <h4>Call Us Directly</h4>
+                <p>08150323260<br>08091246942</p>
+            </div>
+        </div>
+    </section>
+
     <section class="appointment fade-in" id="contact">
         <div class="appointment-container">
             <div class="appointment-form">
@@ -1380,19 +1430,10 @@ header.scrolled .logo-circle {
                 </form>
 
                 <section class="about-clinic">
-  <h2>About SmileWell Dental Clinic</h2>
-  <p>
-    For over 20 years, Smilewell Dental Clinic has been providing gentle,
-    reliable, and modern dental care to families and individuals in a
-    calm and welcoming environment.
-  </p>
-
-  <p>
-    Our long-standing practice is built on experience, patient trust,
-    and a commanding commitment to healthy, confident smiles.
-  </p>
-</section>
-
+                    <h2>About SmileWell Dental Clinic</h2>
+                    <p>For over 20 years, SmileWell Dental Clinic has been providing gentle, reliable, and modern dental care to families and individuals in Ado, Nasarawa State and surrounding communities.</p>
+                    <p>Our long-standing practice is built on experience, patient trust, and a commanding commitment to healthy, confident smiles.</p>
+                </section>
             </div>
 
             <div class="appointment-info">
@@ -1424,10 +1465,11 @@ header.scrolled .logo-circle {
                 <div class="appointment-details">
                     <p><strong>Days:</strong> Monday - Sunday</p>
                     <p><strong>Time:</strong> 8:00 AM - 6:00 PM</p>
-                    <p><strong>Address:</strong><br>Smilewell Dental Clinic . Suite 205, Osinachi Plaza Opp. New Karu Junction, Ado Nassarawa State</p>
-                    <p><strong>Phone Number:</strong>08150323260, 08091246942, 08062152644, 09056459076</p>
+                    <p><strong>Address:</strong><br>SmileWell Dental Clinic. Suite 205, Osinachi Plaza Opp. New Karu Junction, Ado, Nasarawa State</p>
+                    <p><strong>Phone:</strong> 08150323260, 08091246942, 08062152644, 09056459076</p>
                 </div>
                 <a href="tel:+2348150323260" class="call-btn">📞 Call Now</a>
+                &nbsp;
                 <a href="https://wa.me/2348150323260?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileWell%20Dental%20Clinic."
                     target="_blank"
                     class="whatsapp-btn">
@@ -1435,31 +1477,26 @@ header.scrolled .logo-circle {
                 </a>
 
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-                </a>
-
             </div>
         </div>
 
         <div class="map-container">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.545149775709!2d7.630599674527978!3d9.013932289225673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0502c53c7b93%3A0x20cf9ea5be9af58d!2sSmile%20well%20Dental%20Clinic!5e0!3m2!1sen!2sng!4v1772065997103!5m2!1sen!2sng"
-        width="100%"
-        height="400"
-        style="border:0;"
-        allowfullscreen
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    </div>
-
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.545149775709!2d7.630599674527978!3d9.013932289225673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0502c53c7b93%3A0x20cf9ea5be9af58d!2sSmile%20well%20Dental%20Clinic!5e0!3m2!1sen!2sng!4v1772065997103!5m2!1sen!2sng"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </section>
 
     <footer class="footer">
-        <p>© 2026 SmileWell Dental Clinic. All rights reserved.</p>
+        <p>© 2026 SmileWell Dental Clinic — Your Trusted Dental Clinic in Ado, Nasarawa. All rights reserved.</p>
     </footer>
 
-    <!-- Load the appointment script -->
     <script src="{{ url_for('static', filename='js/appointment.js') }}"></script>
 
     <script>
@@ -1482,7 +1519,6 @@ header.scrolled .logo-circle {
             nav.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking a link
         document.querySelectorAll('.nav a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileToggle.classList.remove('active');
@@ -1490,7 +1526,6 @@ header.scrolled .logo-circle {
             });
         });
 
-        // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1498,10 +1533,7 @@ header.scrolled .logo-circle {
                 if (target) {
                     const offset = 90;
                     const targetPosition = target.offsetTop - offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
                 }
             });
         });
@@ -1517,78 +1549,39 @@ header.scrolled .logo-circle {
         function showSlide(n) {
             slides.forEach(slide => slide.classList.remove('active'));
             dots.forEach(dot => dot.classList.remove('active'));
-
             currentSlide = (n + slides.length) % slides.length;
-
             slides[currentSlide].classList.add('active');
             dots[currentSlide].classList.add('active');
         }
 
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
+        function nextSlide() { showSlide(currentSlide + 1); }
+        function prevSlide() { showSlide(currentSlide - 1); }
+        function startSlideshow() { slideInterval = setInterval(nextSlide, 5000); }
+        function stopSlideshow() { clearInterval(slideInterval); }
 
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
+        nextBtn.addEventListener('click', () => { nextSlide(); stopSlideshow(); startSlideshow(); });
+        prevBtn.addEventListener('click', () => { prevSlide(); stopSlideshow(); startSlideshow(); });
 
-        function startSlideshow() {
-            slideInterval = setInterval(nextSlide, 5000);
-        }
-
-        function stopSlideshow() {
-            clearInterval(slideInterval);
-        }
-
-        // Arrow navigation
-        nextBtn.addEventListener('click', () => {
-            nextSlide();
-            stopSlideshow();
-            startSlideshow();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            prevSlide();
-            stopSlideshow();
-            startSlideshow();
-        });
-
-        // Dot navigation
         dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                showSlide(index);
-                stopSlideshow();
-                startSlideshow();
-            });
+            dot.addEventListener('click', () => { showSlide(index); stopSlideshow(); startSlideshow(); });
         });
 
-        // Start slideshow on load
         startSlideshow();
 
-        // Pause on hover
         const heroSlider = document.querySelector('.hero-slider');
         heroSlider.addEventListener('mouseenter', stopSlideshow);
         heroSlider.addEventListener('mouseleave', startSlideshow);
 
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
+        // Intersection Observer for fade-in
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('visible');
             });
-        }, observerOptions);
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        // Before/After image comparison slider
+        // Before/After comparison slider
         document.querySelectorAll('[data-compare]').forEach(container => {
             const afterImg = container.querySelector('.after-img');
             const line = container.querySelector('.slider-line');
@@ -1599,52 +1592,27 @@ header.scrolled .logo-circle {
                 const rect = container.getBoundingClientRect();
                 const position = ((x - rect.left) / rect.width) * 100;
                 const clampedPosition = Math.min(Math.max(position, 0), 100);
-
                 afterImg.style.clipPath = `inset(0 ${100 - clampedPosition}% 0 0)`;
                 line.style.left = `${clampedPosition}%`;
                 handle.style.left = `${clampedPosition}%`;
             }
 
-            container.addEventListener('mousedown', (e) => {
-                isActive = true;
-                updateSlider(e.clientX);
-            });
-
-            container.addEventListener('touchstart', (e) => {
-                isActive = true;
-                updateSlider(e.touches[0].clientX);
-            }, { passive: true });
-
-            document.addEventListener('mousemove', (e) => {
-                if (!isActive) return;
-                updateSlider(e.clientX);
-            });
-
-            document.addEventListener('touchmove', (e) => {
-                if (!isActive) return;
-                updateSlider(e.touches[0].clientX);
-            }, { passive: true });
-
-            document.addEventListener('mouseup', () => {
-                isActive = false;
-            });
-
-            document.addEventListener('touchend', () => {
-                isActive = false;
-            });
+            container.addEventListener('mousedown', (e) => { isActive = true; updateSlider(e.clientX); });
+            container.addEventListener('touchstart', (e) => { isActive = true; updateSlider(e.touches[0].clientX); }, { passive: true });
+            document.addEventListener('mousemove', (e) => { if (!isActive) return; updateSlider(e.clientX); });
+            document.addEventListener('touchmove', (e) => { if (!isActive) return; updateSlider(e.touches[0].clientX); }, { passive: true });
+            document.addEventListener('mouseup', () => { isActive = false; });
+            document.addEventListener('touchend', () => { isActive = false; });
         });
 
-        // Form handling with validation
+        // Form handling
         const form = document.getElementById('appointmentForm');
         const formMessage = document.querySelector('.form-message');
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-
             const button = form.querySelector('button');
             const originalText = button.textContent;
-
-            // Validate form
             const formData = new FormData(form);
             const name = formData.get('name').trim();
             const email = formData.get('email').trim();
@@ -1656,51 +1624,35 @@ header.scrolled .logo-circle {
                 return;
             }
 
-            // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 showMessage('Please enter a valid email address.', 'error');
                 return;
             }
 
-            // Phone validation (basic)
             if (phone.length < 10) {
                 showMessage('Please enter a valid phone number.', 'error');
                 return;
             }
 
-            // Submit to backend
             button.disabled = true;
             button.innerHTML = '<span class="loading"></span> Booking...';
 
             try {
                 const response = await fetch('/contact', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        name: name,
-                        email: email,
-                        phone: phone,
-                        date: date,
-                        message: formData.get('message') || ''
-                    })
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, phone, date, message: formData.get('message') || '' })
                 });
 
                 const data = await response.json();
-
                 button.disabled = false;
                 button.textContent = originalText;
 
                 if (data.status === 'success') {
                     showMessage(data.message || 'Appointment request sent successfully!', 'success');
                     form.reset();
-
-                    // Hide message after 5 seconds
-                    setTimeout(() => {
-                        formMessage.style.display = 'none';
-                    }, 5000);
+                    setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
                 } else {
                     showMessage(data.message || 'Something went wrong. Please try again.', 'error');
                 }
@@ -1708,7 +1660,6 @@ header.scrolled .logo-circle {
                 button.disabled = false;
                 button.textContent = originalText;
                 showMessage('Network error. Please check your connection and try again.', 'error');
-                console.error('Form submission error:', error);
             }
         });
 
@@ -1718,7 +1669,6 @@ header.scrolled .logo-circle {
             formMessage.style.display = 'block';
         }
 
-        // Add input validation feedback
         form.querySelectorAll('input, textarea').forEach(input => {
             input.addEventListener('blur', () => {
                 if (input.hasAttribute('required') && !input.value.trim()) {
@@ -1727,10 +1677,7 @@ header.scrolled .logo-circle {
                     input.style.borderColor = '#0077ff';
                 }
             });
-
-            input.addEventListener('focus', () => {
-                input.style.borderColor = '#0077ff';
-            });
+            input.addEventListener('focus', () => { input.style.borderColor = '#0077ff'; });
         });
     </script>
 </body>
