@@ -5,7 +5,7 @@ from datetime import timedelta, datetime
 app = Flask(__name__)
 app.secret_key = "smilewell_secret_key_2026_change_in_production"
 app.permanent_session_lifetime = timedelta(minutes=15)
-DB_NAME = 'smilewell.db'
+DB_NAME = '/var/data/smilewell.db'
 
 def init_db():
     """Initialize database with proper schema"""
